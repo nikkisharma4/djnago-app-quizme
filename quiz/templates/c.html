@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block body %}
+<h2 class="headerSkill">Answere the following quetions:</h2>
+    <div class="container3">
+        <h4 class="qus">question will display hare</h4>
+        <ul>
+            <li>
+                <input type="radio" name="option" id="opt1" class="answere">
+                <label for="opt1" id="option1" > answere</label>
+            </li>
+            <li>
+                <input type="radio" name="option" id="opt2" class="answere">
+                <label for="opt2" id="option2" > answere</label>
+            </li>
+            <li>
+                <input type="radio" name="option" id="opt3" class="answere">
+                <label for="opt3" id="option3" > answere</label>
+            </li>
+            <li>
+                <input type="radio" name="option" id="opt4" class="answere">
+                <label for="opt4" id="option4" > answere</label>
+            </li>
+        </ul>
+        <input type="button" value="Submit" id="submit" class="btn1">
+    </div>
+    <div id="score" class="showscore"></div>
+    <script src="{% static '/jsfile/c.js' %}"></script>
+{% endblock body%}

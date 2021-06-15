@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+
+{% block body %}
+<form method="post"  action="{% url 'register' %}">
+    {% csrf_token %}
+    <h2 class="headerSkill">Are you ready to test your skills? register here:</h2>
+    <div class="main">
+        <div class="container2">
+       
+            <div class="label">
+                {{ form.username.label}}
+                {{ form.username }}
+            </div>
+            <div class="label">
+                {{form.password1.label}}
+                {{ form.password1}}
+            </div>
+            <div class="label">
+                {{ form.password2.label}}
+                {{ form.password2}}
+            </div>
+            <input type="submit" value="Register" class="btn1">
+            
+
+        </div>
+    </div>
+    <div class="passWarning">
+    {% if form.errors %}
+    <p>Register carefully</p>
+    <ul>
+        <li>equired. 150 characters or fewer. Letters, digits and @/./+/-/_ only. Password:</li>
+        <li>Your password can’t be too similar to your other personal information.</li>
+        <li>Your password must contain at least 8 characters.</li>
+        <li>Your password can’t be a commonly used password.</li>
+        <li>Your password can’t be entirely numeric.</li>
+    </ul>
+</div>
+    {% endif %}
+</form>
+
+{% endblock body%}

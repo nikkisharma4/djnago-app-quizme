@@ -1,0 +1,101 @@
+
+body{
+    background-color: burlywood;
+    /* text-align: center; */
+}
+/* homepage  */
+.container5{
+    text-align: center;
+    width:700px;
+    margin: 200px 300px;
+}
+.btn2{
+    border-radius: 10%;
+    box-shadow: 1px 2px 3px gray;
+    background-color: aqua;
+    padding: 7px 12px;
+    
+}
+
+/* common for all page  */
+.headerSkill{
+    color: rgb(55, 145, 145);
+    margin-top: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}    
+
+.main{
+    margin: 140px 530px;
+    text-align: center;  
+}
+.container{
+    background-color: white;
+    box-shadow: 2px 3px 4px gray;
+    width: 300px;
+    height: 220px;
+    padding: 5px;
+    
+}
+
+
+/* register page  */
+.container2{
+    background-color: white;
+    box-shadow: 2px 3px 4px gray;
+    width: 350px;
+    height: 150px;
+    padding: 6px;
+}
+
+.btn1{
+    border-radius: 10%;
+    box-shadow: 1px 2px 3px gray;
+    background-color: aqua;
+    padding: 4px;
+    
+}
+
+.label{
+    padding: 5px;
+}
+
+
+.container3{
+    padding:20px ;
+    margin-left:420px;
+    margin-top: 50px;
+    width: 500px;
+    background-color: white;
+}
+
+/* quiz page  */
+
+.container4{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    margin:150px 300px;
+    
+}
+.commonclass{
+    /* border:1px solid red; */
+    background-color: white;
+    box-shadow: 1px 3px 4px gray;
+    width:200px;
+    height: 150px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.showscore{
+    text-align: center;
+}
+
+.passWarning{
+    margin: 0px 400px;
+}

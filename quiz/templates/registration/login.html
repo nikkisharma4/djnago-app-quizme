@@ -1,0 +1,28 @@
+{%extends 'base.html' %}
+
+
+{% block body %}
+{% if form.errors %}
+<p>There is somthing wrong, Try again...</p>
+{% endif %}
+{% if next %}
+<p>login fisrt before access this page</p>
+{% endif %}
+
+<form method="post"  action="{% url 'login' %}">
+    {% csrf_token %}
+    <h2 class="headerSkill">Test your skills</h2>
+    <div class="main">
+        <div class="container">
+            <p>User name: {{form.username}}</p>
+            <p>Password: {{form.password}}</p>
+            <input type="submit" value="Login" class="btn1">
+            <!-- <input type="hidden" name="next" value="{{ next }}"> -->
+            <h5>If you are a new user then register here</h5>
+            <a href="/register"><input type="button" value="Register" class="btn1"></a>
+
+        </div>
+    </div>
+</form>
+
+{% endblock body%}
